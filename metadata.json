@@ -1,0 +1,6 @@
+{
+  "name": "QUEENVERSE – The World of Fantasy Queens",
+  "description": "Interactive fantasy queen generator. Summon Fire, Ice, Moon, Dragon, Warrior, and Crystal Queens in signature white and royal blue royal military regalia with titles, kingdoms, and magical powers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

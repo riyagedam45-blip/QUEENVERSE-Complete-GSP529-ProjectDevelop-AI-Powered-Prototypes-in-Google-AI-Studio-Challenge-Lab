@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-decorative: 'Cinzel Decorative', cursive;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    background-color: #040612;
+    color: #f1f3f9;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-decorative {
+  font-family: 'Cinzel Decorative', cursive, serif;
+}
+
+/* Premium Fantasy Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fffbeb 0%, #fde047 25%, #d97706 70%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-sapphire-gradient {
+  background: linear-gradient(135deg, #e0f2fe 0%, #60a5fa 40%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-amethyst-gradient {
+  background: linear-gradient(135deg, #fae8ff 0%, #c084fc 40%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing Royal Buttons & Accents */
+.glow-royal-gold {
+  box-shadow: 0 0 25px -2px rgba(245, 158, 11, 0.4), 0 0 10px rgba(234, 179, 8, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.glow-royal-gold:hover {
+  box-shadow: 0 0 35px 2px rgba(245, 158, 11, 0.6), 0 0 15px rgba(234, 179, 8, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.glow-royal-blue {
+  box-shadow: 0 0 22px -3px rgba(37, 99, 235, 0.45), 0 0 10px rgba(59, 130, 246, 0.25);
+}
+
+.glow-royal-purple {
+  box-shadow: 0 0 22px -3px rgba(147, 51, 234, 0.4), 0 0 10px rgba(168, 85, 247, 0.25);
+}
+
+.gold-card-frame {
+  box-shadow: 0 0 35px -5px rgba(15, 23, 42, 0.9), 0 0 20px -3px rgba(234, 179, 8, 0.25), 0 0 40px -10px rgba(37, 99, 235, 0.3);
+}
+
+/* Dark Midnight Background with Royal Blue & Purple Cosmos */
+.bg-midnight-kingdom {
+  background-color: #040612;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(30, 58, 138, 0.32) 0%, transparent 65%),
+    radial-gradient(circle at 15% 25%, rgba(88, 28, 135, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 85% 65%, rgba(29, 78, 216, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 85%, rgba(109, 40, 217, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at 50% 45%, rgba(217, 119, 6, 0.06) 0%, transparent 55%);
+}
+
+/* Subtle Shimmer Animation */
+@keyframes royal-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-shimmer {
+  animation: royal-shimmer 3.5s infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050817;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e295d;
+  border-radius: 4px;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #253377;
+}
